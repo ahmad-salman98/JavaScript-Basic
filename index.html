@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <title>Material Design for Bootstrap</title>
+    <!-- MDB icon -->
+    <link rel="icon" href="img/mdb-favicon.ico" type="image/x-icon" />
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
+    <!-- Google Fonts Roboto -->
+    <link rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" />
+    <!-- MDB -->
+    <link rel="stylesheet" href="css/mdb.min.css" />
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="./js/vanilla-tilt.js">
+  </head>
+
+  <body class="vh-100">
+    <div class="container h-100 text-white fade">
+      <div class="row d-flex align-items-center h-100">
+        <div class="col-md-6">
+          <div class="fade">
+            <h1 class="title-1 mb-4 opacity-90">Ahmad Salman</h1>
+            <h5 class="title-5 mb-4 opacity-80">
+              Lorem ipsum dolor sit, amet consectetur adipisicing.
+            </h5>
+            <p class="title-p mb-4 opacity-70">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio
+              vero tempore quaerat quo voluptate esse.
+            </p>
+            <a class="btn btn-white btn-rounded btn-lg me-3 opacity-80" data-ripple-color="hsl(218, 41%, 45%)" href="#"
+              role="button">Link</a>
+            <a class="btn btn-outline-white btn-lg btn-rounded opacity-80" href="#" role="button">Link</a>
+          </div>
+        </div>
+
+        <div class="col-md-5 offset-md-1  position-relative">
+          <div id="shape-1" class=" strong-5-strong fade fade-delay-small position-absolute rounded-circle"></div>
+          <div id="shape-2" class="strong-5-strong fade fade-delay-medium position-absolute "></div>
+          <div id="card-custom" class="fade fade-delay-big card shadow-6 rounded-6">
+            <div class="card-body p-5 opacity-90 ls-widest">
+              <h2>
+                <strong>Platinium</strong>
+                <span class="fw-light">card</span>
+              </h2>
+            </div>
+            <div class="card-footer border-0 px-5 opacity-90 ls-widest fw-light ">
+              <img src="./www-removebg-preview (1).png" alt="">
+              <h5 class="mb-5">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Corporis.</h5>
+              <p class="mb-2">Ahmad Salman</p>
+              <p class="mb-5">4/8</p>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script type="text/javascript" src="js/mdb.min.js"></script>
+    <script type="text/javascript" src="js/vanilla-tilt.js"></script>
+    <script type="text/javascript">
+      vanillaTilt.init(document.querySelector("#card-custom"), {
+        startX: 45,
+        startY: 45,
+        rest: false,
+
+      });
+    </script>
+  </body>
+
+</html>
