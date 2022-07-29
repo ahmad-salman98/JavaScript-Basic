@@ -1,75 +1,208 @@
 <!DOCTYPE html>
 <html lang="en">
-
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-    <meta http-equiv="x-ua-compatible" content="ie=edge" />
-    <title>Material Design for Bootstrap</title>
-    <!-- MDB icon -->
-    <link rel="icon" href="img/mdb-favicon.ico" type="image/x-icon" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <title>Ahmad Salman's Portfolio</title>
     <!-- Font Awesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
     <!-- Google Fonts Roboto -->
-    <link rel="stylesheet"
-      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap"
+    />
+
     <!-- MDB -->
+
     <link rel="stylesheet" href="css/mdb.min.css" />
     <link rel="stylesheet" href="./style.css" />
-    <link rel="stylesheet" href="./js/vanilla-tilt.js">
+    <link rel="stylesheet" href="./js/vanilla-tilt.js" />
   </head>
 
-  <body class="vh-100">
-    <div class="container h-100 text-white fade">
-      <div class="row d-flex align-items-center h-100">
-        <div class="col-md-6">
-          <div class="fade">
-            <h1 class="title-1 mb-4 opacity-90">Ahmad Salman</h1>
-            <h5 class="title-5 mb-4 opacity-80">
-              Lorem ipsum dolor sit, amet consectetur adipisicing.
-            </h5>
-            <p class="title-p mb-4 opacity-70">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio
-              vero tempore quaerat quo voluptate esse.
-            </p>
-            <a class="btn btn-white btn-rounded btn-lg me-3 opacity-80" data-ripple-color="hsl(218, 41%, 45%)" href="#"
-              role="button">Link</a>
-            <a class="btn btn-outline-white btn-lg btn-rounded opacity-80" href="#" role="button">Link</a>
-          </div>
-        </div>
-
-        <div class="col-md-5 offset-md-1  position-relative">
-          <div id="shape-1" class=" strong-5-strong fade fade-delay-small position-absolute rounded-circle"></div>
-          <div id="shape-2" class="strong-5-strong fade fade-delay-medium position-absolute "></div>
-          <div id="card-custom" class="fade fade-delay-big card shadow-6 rounded-6">
-            <div class="card-body p-5 opacity-90 ls-widest">
-              <h2>
-                <strong>Platinium</strong>
-                <span class="fw-light">card</span>
-              </h2>
+  <body>
+    <div class="vh-100 landing">
+      <div class="container h-100 text-white">
+        <div class="row d-flex align-items-center h-100">
+          <div class="col-md-6">
+            <div class="fade">
+              <h1 class="title-1 mb-4 opacity-90">
+                Hello, I'm <span class="highlight"> Ahmad Salman </span>
+              </h1>
+              <h5 class="title-5 mb-4 opacity-80">
+                I,m a full Stack web developer
+              </h5>
+              <p class="title-p mb-4 opacity-70">
+                There are two ways to write error-free programs; only the third
+                one works.
+              </p>
+              <a
+                class="btn btn-white btn-rounded btn-lg me-3 opacity-80"
+                data-ripple-color="hsl(218, 41%, 45%)"
+                href="./portfolio.html"
+                target="_blank"
+                role="button"
+                >View Portfolio</a
+              >
+              <a
+                class="btn btn-outline-white btn-lg btn-rounded opacity-80"
+                href="#"
+                role="button"
+                >Contact me</a
+              >
             </div>
-            <div class="card-footer border-0 px-5 opacity-90 ls-widest fw-light ">
-              <img src="./www-removebg-preview (1).png" alt="">
-              <h5 class="mb-5">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Corporis.</h5>
-              <p class="mb-2">Ahmad Salman</p>
-              <p class="mb-5">4/8</p>
+          </div>
 
+          <div class="col-md-5 offset-md-1 position-relative">
+            <div
+              id="shape-1"
+              class="strong-5-strong fade fade-delay-small position-absolute rounded-circle"
+            ></div>
+            <div
+              id="shape-2"
+              class="strong-5-strong fade fade-delay-medium position-absolute"
+            ></div>
+            <div
+              id="card-custom"
+              class="fade fade-delay-big card shadow-6 rounded-6"
+            >
+              <div class="card-body p-4.5 opacity-90 ls-widest">
+                <h2>
+                  <strong>Programmer</strong>
+                  <span class="fw-light">card</span>
+                </h2>
+              </div>
+              <div
+                class="card-footer border-0 px-5 opacity-90 ls-widest fw-light"
+              >
+                <img src="/chip.png" class="mb-5" alt="" />
+                <h5 class="mb-5">0101 1001 1101 0110</h5>
+                <p class="mb-2">Ahmad Salman</p>
+                <p class="mb-5">4/8</p>
+              </div>
             </div>
           </div>
         </div>
       </div>
+
+      <script type="text/javascript" src="js/mdb.min.js"></script>
+      <script type="text/javascript" src="js/vanilla-tilt.js"></script>
+      <script type="text/javascript">
+        VanillaTilt.init(document.querySelector("#card-custom"), {
+          startX: 45,
+          startY: 45,
+          reset: false,
+        });
+      </script>
     </div>
-
-    <script type="text/javascript" src="js/mdb.min.js"></script>
-    <script type="text/javascript" src="js/vanilla-tilt.js"></script>
-    <script type="text/javascript">
-      vanillaTilt.init(document.querySelector("#card-custom"), {
-        startX: 45,
-        startY: 45,
-        rest: false,
-
-      });
-    </script>
   </body>
+  <div class="container-fluid pt-1 pb-1">
+    <nav class="navbar navbar-expand-lg p-0">
+      <a class="navbar-brand" href="#">Navbar</a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <i class="fa-solid fa-bars"></i>
+      </button>
 
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav">
+          <li class="nav-item active">
+            <a class="nav-link p-lg-3 active" href="#">Home </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link p-lg-3" href="#">Link</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link p-lg-3" href="#">Link</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link p-lg-3" href="#">Link</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link p-lg-3" href="#">Link</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </div>
+
+  <!-- <h2 class="d-flex justify-content-center pt-5">About</h2>
+  <div class="about p-5 d-flex justify-content-center align-items-center">
+    <div class="f f1">
+      <img class="pb-3" src="/img/f1.png" alt="" />
+      <h3>Fast</h3>
+      <p>Fast load times and lag free interaction, my highest priority.</p>
+    </div>
+    <div class="f f2">
+      <img class="pb-3" src="/img/f2.png" alt="" />
+      <h3>Responsive</h3>
+      <p>My layouts will work on any device, big or small.</p>
+    </div>
+    <div class="f f3">
+      <img class="pb-3" src="/img/f1.png" alt="" />
+      <h3>Intuitive</h3>
+      <p>Strong preference for easy to use, intuitive UX/UI.</p>
+    </div>
+    <div class="f f4">
+      <img class="pb-3" src="/img/f4.png" alt="" />
+      <h3>Dynamic</h3>
+      <p>Websites don't have to be static, I love making pages come to life.</p>
+    </div>
+  </div> -->
+
+  <section class="About">
+    <div class="container">
+      <!-- holds a row that contain columns -->
+      <h2 class="my-5 justify-content-center">About</h2>
+
+      <div class="row d-flex justify-content-center mb-4">
+        <!-- the row that will contain columns -->
+
+        <div class="col-md-3 my-4 px-4">
+          <img class="mb-4 d-block mx-auto" src="/img/f1.png" alt="" />
+          <h3 class="mb-2">Fast</h3>
+          <p>Fast load times and lag free interaction, my highest priority.</p>
+        </div>
+
+        <div class="col-md-3 my-4 px-4">
+          <img class="mb-4 d-block mx-auto" src="/img/f2.png" alt="" />
+          <h3 class="mb-2">Intuitive</h3>
+          <p>Strong preference for easy to use, intuitive UX/UI.</p>
+        </div>
+
+        <div class="col-md-3 my-4 px-4">
+          <img class="mb-4 d-block mx-auto" src="/img/f3.png" alt="" />
+          <h3 class="mb-2">Responsive</h3>
+          <p>My layouts will work on any device, big or small.</p>
+        </div>
+
+        <div class="col-md-3 my-4 px-4">
+          <img class="mb-4 d-block mx-auto" src="/img/f4.png" alt="" />
+          <h3 class="mb-2">Dynamic</h3>
+          <p>
+            Websites don't have to be static, I love making pages come to life.
+          </p>
+        </div>
+      </div>
+
+      <div class="row my-4">
+        <!-- here is another row -->
+
+        <div class="col-md-6"></div>
+      </div>
+    </div>
+  </section>
 </html>
