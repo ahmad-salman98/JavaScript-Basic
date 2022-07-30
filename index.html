@@ -1,23 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
+
   <head>
     <meta charset="UTF-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1, shrink-to-fit=no"
-    />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
     <title>Ahmad Salman's Portfolio</title>
     <!-- Font Awesome -->
 
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
-    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
     <!-- Google Fonts Roboto -->
-    <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap"
-    />
+    <link rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" />
 
     <!-- MDB -->
 
@@ -27,7 +20,7 @@
   </head>
 
   <body>
-    <div class="vh-100 landing">
+    <div id="intro" class="vh-100 landing">
       <div class="container h-100 text-white">
         <div class="row d-flex align-items-center h-100">
           <div class="col-md-6">
@@ -42,45 +35,24 @@
                 There are two ways to write error-free programs; only the third
                 one works.
               </p>
-              <a
-                class="btn btn-white btn-rounded btn-lg me-3 opacity-80"
-                data-ripple-color="hsl(218, 41%, 45%)"
-                href="./portfolio.html"
-                target="_blank"
-                role="button"
-                >View Portfolio</a
-              >
-              <a
-                class="btn btn-outline-white btn-lg btn-rounded opacity-80"
-                href="#"
-                role="button"
-                >Contact me</a
-              >
+              <a class="btn btn-white btn-rounded btn-lg me-3 opacity-80" data-ripple-color="hsl(218, 41%, 45%)"
+                href="#about" role="button">View Portfolio</a>
+              <a class="btn btn-outline-white btn-lg btn-rounded opacity-80" href="#contact" role="button">Contact
+                me</a>
             </div>
           </div>
 
           <div class="col-md-5 offset-md-1 position-relative">
-            <div
-              id="shape-1"
-              class="strong-5-strong fade fade-delay-small position-absolute rounded-circle"
-            ></div>
-            <div
-              id="shape-2"
-              class="strong-5-strong fade fade-delay-medium position-absolute"
-            ></div>
-            <div
-              id="card-custom"
-              class="fade fade-delay-big card shadow-6 rounded-6"
-            >
+            <div id="shape-1" class="strong-5-strong fade fade-delay-small position-absolute rounded-circle"></div>
+            <div id="shape-2" class="strong-5-strong fade fade-delay-medium position-absolute"></div>
+            <div id="card-custom" class="fade fade-delay-big card shadow-6 rounded-6">
               <div class="card-body p-4.5 opacity-90 ls-widest">
                 <h2>
                   <strong>Programmer</strong>
                   <span class="fw-light">card</span>
                 </h2>
               </div>
-              <div
-                class="card-footer border-0 px-5 opacity-90 ls-widest fw-light"
-              >
+              <div class="card-footer border-0 px-5 opacity-90 ls-widest fw-light">
                 <img src="/chip.png" class="mb-5" alt="" />
                 <h5 class="mb-5">0101 1001 1101 0110</h5>
                 <p class="mb-2">Ahmad Salman</p>
@@ -101,7 +73,9 @@
         });
       </script>
     </div>
-    <div class="container-fluid pt-1 pb-1">
+
+    <!-- nav bar -->
+    <!-- <div class="container-fluid pt-1 pb-1">
       <nav class="navbar navbar-expand-lg p-0">
         <a class="navbar-brand" href="#">Navbar</a>
         <button
@@ -136,9 +110,99 @@
           </ul>
         </div>
       </nav>
-    </div>
+    </div> -->
+    <!-- <nav class="navbar fixed-top navbar-expand-lg navbar-dark p-md-3">
+      <div class="container">
+        <a href="#" class="navbar-brand"><img src="/img/logo .png" alt="" /></a>
+        <button
+          type="button"
+          class="navbar-toggler"
+          data-bs-target="#navbarNav"
+          data-bs-toggle="collapse"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle Navbar"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a href="#" class="nav-link text-white">Home</a>
+            </li>
 
-    <section class="About">
+            <li class="nav-item">
+              <a href="#" class="nav-link text-white">About</a>
+            </li>
+
+            <li class="nav-item">
+              <a href="#" class="nav-link text-white">Projects</a>
+            </li>
+
+            <li class="nav-item">
+              <a href="#" class="nav-link text-white">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav> -->
+
+    <nav class=" navbar navbar-expand-md navbar-dark sticky-top ">
+      <div class="container-fluid">
+        <!-- toggler -->
+        <button id="navbartoggler" class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- Navbar brand -->
+        <a class="navbar-brand nav-link" href="#">
+          <img id="navlogo" src="/img/logo .png" alt="" />
+        </a>
+
+        <!-- navbar buttons  -->
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item active">
+              <a class="nav-link" aria-current="page" href="#intro">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#about" rel="" "
+                >About</a
+              >
+            </li>
+            <li class=" nav-item">
+                <a class="nav-link" href="#project">Projects</a>
+            </li>
+
+            <li class=" nav-item">
+                <a class="nav-link" href="#contact">Contact</a>
+            </li>
+          </ul>
+
+          <ul class="navbar-nav list-inline">
+            <!-- Icons -->
+            <li class="">
+              <a class="nav-link" href="https://web.facebook.com/ahmad.Od98" rel="nofollow" target="_blank">
+                <i class="fab fa-facebook-f"></i>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#" rel="nofollow" target="_blank">
+                <i class="fab fa-twitter"></i>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="https://github.com/ahmad-salman98" rel="nofollow" target="_blank">
+                <i class="fab fa-github"></i>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <section id="about" class="About">
       <div class="container">
         <!-- holds a row that contain columns -->
         <h2 class="my-5 justify-content-center">About</h2>
@@ -158,7 +222,8 @@
             <img class="mb-4 d-block mx-auto" src="/img/f2.png" alt="" />
             <h3 class="mb-2">Responsive</h3>
             <p class="ls-widest opacity-90">
-              Strong preference for easy to use, intuitive UX/UI.
+              My layouts will work on any device, big or small.
+
             </p>
           </div>
 
@@ -166,7 +231,7 @@
             <img class="mb-4 d-block mx-auto" src="/img/f3.png" alt="" />
             <h3 class="mb-2">Intuitive</h3>
             <p class="ls-widest opacity-90">
-              My layouts will work on any device, big or small.
+              Strong preference for easy to use, intuitive UX/UI.
             </p>
           </div>
 
@@ -185,21 +250,11 @@
 
           <div class="col-md-6 myimg-col">
             <div class="myimg">
-              <img
-                id="myimg"
-                class="mx-auto d-block"
-                src="/img/myimg.jpg"
-                alt=""
-              />
+              <img id="myimg" class="mx-auto d-block" src="/img/myimg.jpg" alt="" />
 
               <!-- turn img to block and add mx-auto class to centre it -->
             </div>
-            <label
-              id="myimg-label"
-              class="ls-widest fw-bold my-4 mx-auto d-block"
-              for="myimg"
-              >Who's this guy?</label
-            >
+            <label id="myimg-label" class="ls-widest fw-bold my-4 mx-auto d-block" for="myimg">Who's this guy?</label>
 
             <p class="opacity-80 ls-widest">
               A strong passion for web pages design and Performance has been
@@ -239,34 +294,22 @@
       </div>
     </section>
 
-    <section class="container projects-container py-5 my-5">
+    <section id="project" class="container projects-container py-5 my-5">
       <h2 class="d-block mx-auto my-5">projects</h2>
 
       <div class="row">
         <div class="col-md-4 px-4">
-          <img
-            class="mt-5 project-1 rounded-6"
-            src="/img/project-1.png"
-            alt=""
-          />
+          <img class="mt-5 project-1 rounded-6" src="/img/project-1.png" alt="" />
           <h3 class="fw-bold ls-widest d-block mx-auto my-3">World cup 2022</h3>
         </div>
         <div class="col-md-4 px-4">
-          <img
-            class="mt-5 project-2 rounded-6"
-            src="/img/project-2.png"
-            alt=""
-          />
+          <img class="mt-5 project-2 rounded-6" src="/img/project-2.png" alt="" />
           <h3 class="fw-bold ls-widest d-block mx-auto my-3">
             Flex & Grid excercise
           </h3>
         </div>
         <div class="col-md-4 px-4">
-          <img
-            class="mt-5 project-3 rounded-6"
-            src="/img/project-3.png"
-            alt=""
-          />
+          <img class="mt-5 project-3 rounded-6" src="/img/project-3.png" alt="" />
           <h3 class="fw-bold ls-widest d-block mx-auto my-3">
             1st bootstrap project
           </h3>
@@ -275,44 +318,48 @@
     </section>
 
     <!-- Contact section  -->
-    <section class="contact py-5">
+    <section id="contact" class="contact py-5">
+      <h2 class="text-white fw-bold">Contact me</h2>
+
       <div class="row py-5">
         <div class="col-md-6 px-4 py-5">
           <div class="phone d-flex my-4">
             <img class="" src="/img/phone.png" alt="" />
-            <p class="ls-widest fw-light text-white my-auto">+962787823264</p>
+            <p class="ls-widest fw-light text-white my-auto">
+              <a class="text-white" href="tel:+962787823264">+962787823264</a>
+            </p>
           </div>
 
           <div class="email d-flex my-4">
             <img class="" src="/img/email.png" alt="" />
             <p class="ls-widest fw-light text-white my-auto">
-              ahmad98alsalman@gmail.com
+              <a class="text-white" href="mailto:ahmad98alsalman@gmail.com">ahmad98alsalman@gmail.com
+              </a>
             </p>
           </div>
         </div>
-        <div class="social col-md-6 d-flex">
+        <div class="social col-md-6 my-auto">
           <div class="facebook">
-            <a href="https://web.facebook.com/ahmad.Od98" target="_blank"
-              ><img src="/img/facebook.png" alt=""
-            /></a>
+            <a href="https://web.facebook.com/ahmad.Od98" target="_blank"><img src="/img/facebook.png" alt="" /></a>
           </div>
           <div class="instagram">
-            <a href="https://www.instagram.com/ahmad.odeh98/" target="_blank"
-              ><img src="/img/instagram.png" alt=""
-            /></a>
+            <a href="https://www.instagram.com/ahmad.odeh98/" target="_blank"><img src="/img/instagram.png"
+                alt="" /></a>
           </div>
           <div class="github">
-            <a href="https://github.com/ahmad-salman98" target="_blank"
-              ><img src="/img/github.png" alt=""
-            /></a>
+            <a href="https://github.com/ahmad-salman98" target="_blank"><img src="/img/github.png" alt="" /></a>
           </div>
           <div class="linkedIn">
-            <a href="https://www.linkedin.com/in/ahmad-od/" target="_blank"
-              ><img src="/img/linkedin.png" alt=""
-            /></a>
+            <a href="https://www.linkedin.com/in/ahmad-od/" target="_blank"><img src="/img/linkedin.png" alt="" /></a>
           </div>
         </div>
       </div>
     </section>
+    <footer>
+      <p class=" text-white ls-widest">
+        Ahmad Salman <span> &copy;2022 </span>
+      </p>
+    </footer>
   </body>
+
 </html>
