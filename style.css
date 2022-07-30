@@ -1,5 +1,4 @@
 body {
-  height: 10000px;
   overflow-y: scroll;
 }
 .landing {
@@ -20,6 +19,7 @@ body {
       hsl(218, 41%, 19%) 80%,
       transparent 100%
     );
+  overflow: hidden;
 }
 
 .title-1 {
@@ -177,4 +177,23 @@ p {
   width: 400px;
   height: 300px;
   border: #44006b 1px solid;
+}
+.phone img,
+.email img, .contact img {
+  filter: brightness(0) invert(1);
+  width: 40px;
+  margin-right: 2rem;
+  padding: 0;
+}
+.phone p,
+.email p {
+  font-size: larger;
+}
+.contact {
+  background-color: #252934;
+}
+.phone,
+.email {
+  padding-left: 50%;
+  justify-content: start;
 }
