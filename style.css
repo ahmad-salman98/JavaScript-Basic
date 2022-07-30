@@ -56,11 +56,18 @@ body {
   height: 300px;
   width: 300px;
   background: radial-gradient(#44006b, #ad1fff);
+  position: absolute;
 }
 
 .card-footer img {
   width: 50px;
   filter: brightness(0) invert(1);
+}
+.card-footer p {
+  text-align: left;
+}
+.title-p {
+  text-align: left;
 }
 
 .fade {
@@ -116,4 +123,58 @@ body {
 h3,
 p {
   text-align: center;
+}
+.myimg-col {
+  padding-right: 3rem;
+}
+.myimg img {
+  width: 400px;
+  border-radius: 0% 100% 43% 57% / 39% 100% 0% 61%;
+  border: #44006b solid 2px;
+}
+.myimg-col p {
+  text-align: justify;
+}
+#myimg-label {
+  font-size: x-large;
+  text-align: center;
+}
+.mycss,
+.myphp,
+.mybootstrap,
+.mylaravel,
+.myhtml,
+.myjs {
+  background-color: rgba(0, 0, 0, 0.121);
+  height: fit-content;
+  margin-left: 3rem;
+}
+#mycss,
+#myphp,
+#mybootstrap,
+#mylaravel,
+#myhtml,
+#myjs {
+  width: 70%;
+  background-color: hsl(182, 86%, 36%);
+  color: white;
+  margin: 0;
+}
+#myhtml,
+#mybootstrap {
+  width: 85%;
+}
+#mylaravel {
+  width: 60%;
+}
+
+.projects-container {
+  background-color: rgba(0, 0, 0, 0.032);
+}
+.project-1,
+.project-2,
+.project-3 {
+  width: 400px;
+  height: 300px;
+  border: #44006b 1px solid;
 }

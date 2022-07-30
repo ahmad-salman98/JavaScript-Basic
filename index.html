@@ -101,108 +101,188 @@
         });
       </script>
     </div>
+    <div class="container-fluid pt-1 pb-1">
+      <nav class="navbar navbar-expand-lg p-0">
+        <a class="navbar-brand" href="#">Navbar</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <i class="fa-solid fa-bars"></i>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav">
+            <li class="nav-item active">
+              <a class="nav-link p-lg-3 active" href="#">Home </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link p-lg-3" href="#">Link</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link p-lg-3" href="#">Link</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link p-lg-3" href="#">Link</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link p-lg-3" href="#">Link</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+
+    <section class="About">
+      <div class="container">
+        <!-- holds a row that contain columns -->
+        <h2 class="my-5 justify-content-center">About</h2>
+
+        <div class="row d-flex justify-content-center mb-4">
+          <!-- the row that will contain columns -->
+
+          <div class="col-md-3 my-4 px-4">
+            <img class="mb-4 d-block mx-auto" src="/img/f1.png" alt="" />
+            <h3 class="mb-2">Fast</h3>
+            <p class="ls-widest opacity-90">
+              Fast load times and lag free interaction, my highest priority.
+            </p>
+          </div>
+
+          <div class="col-md-3 my-4 px-4">
+            <img class="mb-4 d-block mx-auto" src="/img/f2.png" alt="" />
+            <h3 class="mb-2">Responsive</h3>
+            <p class="ls-widest opacity-90">
+              Strong preference for easy to use, intuitive UX/UI.
+            </p>
+          </div>
+
+          <div class="col-md-3 my-4 px-4">
+            <img class="mb-4 d-block mx-auto" src="/img/f3.png" alt="" />
+            <h3 class="mb-2">Intuitive</h3>
+            <p class="ls-widest opacity-90">
+              My layouts will work on any device, big or small.
+            </p>
+          </div>
+
+          <div class="col-md-3 my-4 px-4">
+            <img class="mb-4 d-block mx-auto" src="/img/f4.png" alt="" />
+            <h3 class="mb-2">Dynamic</h3>
+            <p class="ls-widest opacity-90">
+              Websites don't have to be static, I love making pages come to
+              life.
+            </p>
+          </div>
+        </div>
+
+        <div class="row my-5">
+          <!-- here is another row -->
+
+          <div class="col-md-6 myimg-col">
+            <div class="myimg">
+              <img
+                id="myimg"
+                class="mx-auto d-block"
+                src="/img/myimg.jpg"
+                alt=""
+              />
+
+              <!-- turn img to block and add mx-auto class to centre it -->
+            </div>
+            <label
+              id="myimg-label"
+              class="ls-widest fw-bold my-4 mx-auto d-block"
+              for="myimg"
+              >Who's this guy?</label
+            >
+
+            <p class="opacity-80 ls-widest">
+              A strong passion for web pages design and Performance has been
+              taking me throughout interesting and enjoyable routes of working,
+              searching, and volunteering. I'm not rushing for an ambitious
+              future, rather, I focus patiently on gaining high-quality
+              experiences.
+            </p>
+          </div>
+
+          <div class="col-md-6 myexp d-grid">
+            <div class="mycss rounded-6">
+              <h4 id="mycss" class="px-4 rounded-6 py-1">CSS</h4>
+            </div>
+
+            <div class="mycss rounded-6">
+              <h4 id="myhtml" class="px-4 rounded-6 py-1">HTML</h4>
+            </div>
+
+            <div class="myjs rounded-6">
+              <h4 id="myjs" class="px-4 rounded-6 py-1">javascript</h4>
+            </div>
+
+            <div class="mybootstrap rounded-6">
+              <h4 id="mybootstrap" class="px-4 rounded-6 py-1">bootstrap</h4>
+            </div>
+
+            <div class="myphp rounded-6">
+              <h4 id="myphp" class="px-4 rounded-6 py-1">PHP</h4>
+            </div>
+
+            <div class="mylaravel rounded-6">
+              <h4 id="mylaravel" class="px-4 rounded-6 py-1">laravel</h4>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="container projects-container py-5 my-5">
+      <h2 class="d-block mx-auto my-5">projects</h2>
+
+      <div class="row">
+        <div class="col-md-4 px-4">
+          <img
+            class="mt-5 project-1 rounded-6"
+            src="/img/project-1.png"
+            alt=""
+          />
+          <h3 class="fw-bold ls-widest d-block mx-auto my-3">World cup 2022</h3>
+        </div>
+        <div class="col-md-4 px-4">
+          <img
+            class="mt-5 project-2 rounded-6"
+            src="/img/project-2.png"
+            alt=""
+          />
+          <h3 class="fw-bold ls-widest d-block mx-auto my-3">
+            Flex & Grid excercise
+          </h3>
+        </div>
+        <div class="col-md-4 px-4">
+          <img
+            class="mt-5 project-3 rounded-6"
+            src="/img/project-3.png"
+            alt=""
+          />
+          <h3 class="fw-bold ls-widest d-block mx-auto my-3">
+            1st bootstrap project
+          </h3>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact section  -->
+    <section class="contact py-5">
+      <div class="row py-5">
+        <div class="col-mid-6 px-4 py-5">
+          <div class="phone d-block px-auto py-1">
+            
+          </div>
+        </div>
+      </div>
+    </section>
   </body>
-  <div class="container-fluid pt-1 pb-1">
-    <nav class="navbar navbar-expand-lg p-0">
-      <a class="navbar-brand" href="#">Navbar</a>
-      <button
-        class="navbar-toggler"
-        type="button"
-        data-toggle="collapse"
-        data-target="#navbarSupportedContent"
-        aria-controls="navbarSupportedContent"
-        aria-expanded="false"
-        aria-label="Toggle navigation"
-      >
-        <i class="fa-solid fa-bars"></i>
-      </button>
-
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav">
-          <li class="nav-item active">
-            <a class="nav-link p-lg-3 active" href="#">Home </a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link p-lg-3" href="#">Link</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link p-lg-3" href="#">Link</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link p-lg-3" href="#">Link</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link p-lg-3" href="#">Link</a>
-          </li>
-        </ul>
-      </div>
-    </nav>
-  </div>
-
-  <!-- <h2 class="d-flex justify-content-center pt-5">About</h2>
-  <div class="about p-5 d-flex justify-content-center align-items-center">
-    <div class="f f1">
-      <img class="pb-3" src="/img/f1.png" alt="" />
-      <h3>Fast</h3>
-      <p>Fast load times and lag free interaction, my highest priority.</p>
-    </div>
-    <div class="f f2">
-      <img class="pb-3" src="/img/f2.png" alt="" />
-      <h3>Responsive</h3>
-      <p>My layouts will work on any device, big or small.</p>
-    </div>
-    <div class="f f3">
-      <img class="pb-3" src="/img/f1.png" alt="" />
-      <h3>Intuitive</h3>
-      <p>Strong preference for easy to use, intuitive UX/UI.</p>
-    </div>
-    <div class="f f4">
-      <img class="pb-3" src="/img/f4.png" alt="" />
-      <h3>Dynamic</h3>
-      <p>Websites don't have to be static, I love making pages come to life.</p>
-    </div>
-  </div> -->
-
-  <section class="About">
-    <div class="container">
-      <!-- holds a row that contain columns -->
-      <h2 class="my-5 justify-content-center">About</h2>
-
-      <div class="row d-flex justify-content-center mb-4">
-        <!-- the row that will contain columns -->
-
-        <div class="col-md-3 my-4 px-4">
-          <img class="mb-4 d-block mx-auto" src="/img/f1.png" alt="" />
-          <h3 class="mb-2">Fast</h3>
-          <p>Fast load times and lag free interaction, my highest priority.</p>
-        </div>
-
-        <div class="col-md-3 my-4 px-4">
-          <img class="mb-4 d-block mx-auto" src="/img/f2.png" alt="" />
-          <h3 class="mb-2">Intuitive</h3>
-          <p>Strong preference for easy to use, intuitive UX/UI.</p>
-        </div>
-
-        <div class="col-md-3 my-4 px-4">
-          <img class="mb-4 d-block mx-auto" src="/img/f3.png" alt="" />
-          <h3 class="mb-2">Responsive</h3>
-          <p>My layouts will work on any device, big or small.</p>
-        </div>
-
-        <div class="col-md-3 my-4 px-4">
-          <img class="mb-4 d-block mx-auto" src="/img/f4.png" alt="" />
-          <h3 class="mb-2">Dynamic</h3>
-          <p>
-            Websites don't have to be static, I love making pages come to life.
-          </p>
-        </div>
-      </div>
-
-      <div class="row my-4">
-        <!-- here is another row -->
-
-        <div class="col-md-6"></div>
-      </div>
-    </div>
-  </section>
 </html>
