@@ -1,5 +1,6 @@
 body {
   overflow-y: scroll;
+  overflow-x: hidden;
 }
 .landing {
   background-color: hsl(218, 41%, 15%);
@@ -32,6 +33,25 @@ body {
 
 .title-p {
   color: hsl(218, 81%, 85%);
+  text-align: left;
+}
+.introbtn .btn {
+  height: 40px;
+  border-radius: 20px;
+  font-size: 20px;
+  border-width: 0.125rem;
+  cursor: pointer;
+}
+.introbtn .btn p {
+  font-size: 13px;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+.cardcol {
+  transform: scale(0.9, 0.9);
 }
 
 #card-custom {
@@ -39,24 +59,27 @@ body {
   height: 500px;
   background-color: hsla(0, 0%, 100%, 0.15);
   backdrop-filter: blur(30px);
+  position: relative;
+  bottom: 350px;
 }
 
 #shape-1 {
   height: 220px;
   width: 220px;
   background: radial-gradient(#44006b, #ad1fff);
-  bottom: -100px;
-  left: -90px;
+  left: -110px;
+  top: 550px;
+  position: relative;
 }
 
 #shape-2 {
   border-radius: 46% 54% 49% 51% / 100% 56% 44% 0%;
-  top: -100px;
-  right: 10px;
+  top: -200px;
+  right: -180px;
   height: 300px;
   width: 300px;
   background: radial-gradient(#44006b, #ad1fff);
-  position: absolute;
+  position: relative;
 }
 
 .card-footer img {
@@ -64,9 +87,6 @@ body {
   filter: brightness(0) invert(1);
 }
 .card-footer p {
-  text-align: left;
-}
-.title-p {
   text-align: left;
 }
 
@@ -106,6 +126,7 @@ body {
   background-color: var(--nav-color);
 }
 .navbar .navbar-nav .nav-link {
+  font-size: larger;
   color: white;
 }
 .navbar .navbar-nav .nav-link.avtive,
@@ -113,13 +134,15 @@ body {
 .navbar .navbar-nav .nav-link:focus {
   color: var(--color-nav);
 }
-#navbartoggler {
-  z-index: 100;
-}
+
 .container h2,
 h3,
 p {
   text-align: center;
+  font-family: " monospace";
+}
+#about {
+  margin-top: 7rem;
 }
 .myimg-col {
   padding-right: 3rem;
@@ -127,14 +150,21 @@ p {
 .myimg img {
   width: 400px;
   border-radius: 0% 100% 43% 57% / 39% 100% 0% 61%;
-  border: #44006b solid 2px;
+  border: #0da1a7 solid 3px;
 }
 .myimg-col p {
   text-align: justify;
+  text-shadow: 1px 1px #0da2a787;
+  border: #0da1a7 1px;
 }
 #myimg-label {
   font-size: x-large;
   text-align: center;
+}
+.myexp,
+.myimg-col {
+  height: 700px;
+  margin-bottom: 2rem;
 }
 .mycss,
 .myphp,
@@ -153,7 +183,7 @@ p {
 #myhtml,
 #myjs {
   width: 70%;
-  background-color: hsl(182, 86%, 36%);
+  background-color: #04c2c9;
   color: white;
   margin: 0;
 }
@@ -163,6 +193,10 @@ p {
 }
 #mylaravel {
   width: 60%;
+}
+p.skills {
+  display: flex;
+  align-items: flex-start;
 }
 
 .projects-container {
@@ -175,9 +209,9 @@ p {
   height: 300px;
   border: #44006b 1px solid;
 }
-.phone img,
-.email img,
-.contact img {
+
+.contact img,
+#navlogo {
   filter: brightness(0) invert(1);
   width: 40px;
   margin-right: 2rem;
@@ -185,20 +219,23 @@ p {
 }
 .phone p,
 .email p {
-  font-size: larger;
+  font-size: large;
 }
 .contact {
   background-color: #252934;
+  height: fit-content;
 }
 .phone,
 .email {
-  padding-left: 50%;
   justify-content: start;
 }
+.phone a,
+.email a {
+  text-decoration: none;
+}
+
 .social {
-  display: flex;
   padding: 0;
-  padding-right: 100px;
 }
 
 .social img {
@@ -214,6 +251,7 @@ footer span {
   color: red;
 }
 footer {
+  border-top: red solid 1px;
   display: flex;
   height: 100px;
   background-color: black;
@@ -228,3 +266,5 @@ footer p {
   margin: 0;
   padding: 0;
 }
+
+/* editing */

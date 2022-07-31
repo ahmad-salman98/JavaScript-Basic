@@ -3,7 +3,7 @@
 
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="viewport" content="width=device-width, initial-scale=0.75=, shrink-to-fit=no" />
     <title>Ahmad Salman's Portfolio</title>
     <!-- Font Awesome -->
 
@@ -17,34 +17,50 @@
     <link rel="stylesheet" href="css/mdb.min.css" />
     <link rel="stylesheet" href="./style.css" />
     <link rel="stylesheet" href="./js/vanilla-tilt.js" />
+
+    <!-- CDN  -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
+      integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
   </head>
 
   <body>
-    <div id="intro" class="vh-100 landing">
-      <div class="container h-100 text-white">
-        <div class="row d-flex align-items-center h-100">
-          <div class="col-md-6">
+
+
+    <!-- CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+      crossorigin="anonymous"></script>
+
+
+    <div id="intro" class="  landing">
+      <div class="container vh-100  text-white ">
+        <div class="  d-flex h-100 align-items-center  ">
+          <div class="col-md-6   introbtn">
             <div class="fade">
               <h1 class="title-1 mb-4 opacity-90">
                 Hello, I'm <span class="highlight"> Ahmad Salman </span>
               </h1>
               <h5 class="title-5 mb-4 opacity-80">
-                I,m a full Stack web developer
+                I,m a full stack web developer
               </h5>
               <p class="title-p mb-4 opacity-70">
-                There are two ways to write error-free programs; only the third
-                one works.
+                we bring idea's to life with code.
               </p>
-              <a class="btn btn-white btn-rounded btn-lg me-3 opacity-80" data-ripple-color="hsl(218, 41%, 45%)"
-                href="#about" role="button">View Portfolio</a>
-              <a class="btn btn-outline-white btn-lg btn-rounded opacity-80" href="#contact" role="button">Contact
-                me</a>
+              <a class="btn btn-light btn-lg me-4 my-auto h-auto opacity-80 " data-ripple-color="hsl(218, 41%, 45%)"
+                href="#about" role="button">
+                <p class="my-auto opacity-70">View Portfolio</p>
+              </a>
+
+
+              <a class="btn btn-outline-light btn-lg h-auto opacity-80" href="#contact" role="button">
+                <p class="my-auto opacity-90 ">Contact me</p>
+              </a>
             </div>
           </div>
 
-          <div class="col-md-5 offset-md-1 position-relative">
-            <div id="shape-1" class="strong-5-strong fade fade-delay-small position-absolute rounded-circle"></div>
-            <div id="shape-2" class="strong-5-strong fade fade-delay-medium position-absolute"></div>
+          <div class="col-md-6  my-auto  cardcol d-none  d-lg-block d-xl-block d-xxl-block  ">
+            <div id="shape-1" class=" fade fade-delay-small  rounded-circle"></div>
+            <div id="shape-2" class=" fade fade-delay-medium "></div>
             <div id="card-custom" class="fade fade-delay-big card shadow-6 rounded-6">
               <div class="card-body p-4.5 opacity-90 ls-widest">
                 <h2>
@@ -53,17 +69,17 @@
                 </h2>
               </div>
               <div class="card-footer border-0 px-5 opacity-90 ls-widest fw-light">
-                <img src="/chip.png" class="mb-5" alt="" />
+                <img src="/img/chip.png" class="mb-5" alt="" />
                 <h5 class="mb-5">0101 1001 1101 0110</h5>
                 <p class="mb-2">Ahmad Salman</p>
-                <p class="mb-5">4/8</p>
+                <p class="mb-5">4.8</p>
               </div>
             </div>
           </div>
         </div>
       </div>
-
-      <script type="text/javascript" src="js/mdb.min.js"></script>
+    </div>
+    <!-- <script type="text/javascript" src="js/mdb.min.js"></script>
       <script type="text/javascript" src="js/vanilla-tilt.js"></script>
       <script type="text/javascript">
         VanillaTilt.init(document.querySelector("#card-custom"), {
@@ -71,98 +87,26 @@
           startY: 45,
           reset: false,
         });
-      </script>
-    </div>
+      </script> -->
 
     <!-- nav bar -->
-    <!-- <div class="container-fluid pt-1 pb-1">
-      <nav class="navbar navbar-expand-lg p-0">
-        <a class="navbar-brand" href="#">Navbar</a>
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-toggle="collapse"
-          data-target="#navbarSupportedContent"
-          aria-controls="navbarSupportedContent"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
+
+    <nav class=" navbar navbar-expand-md navbar-dark sticky-top  ">
+      <div class="container-fluid">
+        <!-- toggler -->
+        <button type="button" class="navbar-toggler" data-bs-target="#navbarNav" data-bs-toggle="collapse"
+          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle Navbar">
           <i class="fa-solid fa-bars"></i>
         </button>
 
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav">
-            <li class="nav-item active">
-              <a class="nav-link p-lg-3 active" href="#">Home </a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link p-lg-3" href="#">Link</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link p-lg-3" href="#">Link</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link p-lg-3" href="#">Link</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link p-lg-3" href="#">Link</a>
-            </li>
-          </ul>
-        </div>
-      </nav>
-    </div> -->
-    <!-- <nav class="navbar fixed-top navbar-expand-lg navbar-dark p-md-3">
-      <div class="container">
-        <a href="#" class="navbar-brand"><img src="/img/logo .png" alt="" /></a>
-        <button
-          type="button"
-          class="navbar-toggler"
-          data-bs-target="#navbarNav"
-          data-bs-toggle="collapse"
-          aria-controls="navbarNav"
-          aria-expanded="false"
-          aria-label="Toggle Navbar"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav">
-            <li class="nav-item">
-              <a href="#" class="nav-link text-white">Home</a>
-            </li>
-
-            <li class="nav-item">
-              <a href="#" class="nav-link text-white">About</a>
-            </li>
-
-            <li class="nav-item">
-              <a href="#" class="nav-link text-white">Projects</a>
-            </li>
-
-            <li class="nav-item">
-              <a href="#" class="nav-link text-white">Contact</a>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </nav> -->
-
-    <nav class=" navbar navbar-expand-md navbar-dark sticky-top ">
-      <div class="container-fluid">
-        <!-- toggler -->
-        <button id="navbartoggler" class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
-          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-
         <!-- Navbar brand -->
-        <a class="navbar-brand nav-link" href="#">
+        <a class="navbar-brand nav-link ms-5" href="#">
           <img id="navlogo" src="/img/logo .png" alt="" />
         </a>
 
         <!-- navbar buttons  -->
         <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <ul class="navbar-nav mx-auto mb-2 mb-lg-0 nav-tabs nav-justified ">
             <li class="nav-item active">
               <a class="nav-link" aria-current="page" href="#intro">Home</a>
             </li>
@@ -176,11 +120,11 @@
             </li>
 
             <li class=" nav-item">
-                <a class="nav-link" href="#contact">Contact</a>
+              <a class="nav-link" href="#contact">Contact</a>
             </li>
           </ul>
 
-          <ul class="navbar-nav list-inline">
+          <ul class="navbar-nav list-inline me-5 ">
             <!-- Icons -->
             <li class="">
               <a class="nav-link" href="https://web.facebook.com/ahmad.Od98" rel="nofollow" target="_blank">
@@ -202,15 +146,17 @@
       </div>
     </nav>
 
-    <section id="about" class="About">
-      <div class="container">
-        <!-- holds a row that contain columns -->
-        <h2 class="my-5 justify-content-center">About</h2>
 
-        <div class="row d-flex justify-content-center mb-4">
+    <section id="about" class="About ">
+
+      <div class="container my-5">
+        <!-- holds a row that contain columns -->
+        <h2 class=" justify-content-center d-block display-1 opacity-80 ">About</h2>
+
+        <div class="row d-flex justify-content-center my-5">
           <!-- the row that will contain columns -->
 
-          <div class="col-md-3 my-4 px-4">
+          <div class="col-md-3 my-4 px-4  ">
             <img class="mb-4 d-block mx-auto" src="/img/f1.png" alt="" />
             <h3 class="mb-2">Fast</h3>
             <p class="ls-widest opacity-90">
@@ -248,13 +194,13 @@
         <div class="row my-5">
           <!-- here is another row -->
 
-          <div class="col-md-6 myimg-col">
+          <div class="col myimg-col  my-auto ">
             <div class="myimg">
-              <img id="myimg" class="mx-auto d-block" src="/img/myimg.jpg" alt="" />
+              <img id="myimg" class="mx-auto mt-2 d-block" src="/img/myimg.jpg" alt="" />
 
               <!-- turn img to block and add mx-auto class to centre it -->
             </div>
-            <label id="myimg-label" class="ls-widest fw-bold my-4 mx-auto d-block" for="myimg">Who's this guy?</label>
+            <p id="myimg-label" class="ls-widest fw-bold my-4 mx-auto d-block" for="myimg">Who's this guy?</p>
 
             <p class="opacity-80 ls-widest">
               A strong passion for web pages design and Performance has been
@@ -265,29 +211,41 @@
             </p>
           </div>
 
-          <div class="col-md-6 myexp d-grid">
-            <div class="mycss rounded-6">
-              <h4 id="mycss" class="px-4 rounded-6 py-1">CSS</h4>
+          <div class="col myexp d-grid my-auto  ">
+            <div class="mycss rounded-6  ">
+              <h4 id="mycss" class="px-4 rounded-6 py-1">
+                <p class="skills my-auto">CSS</p>
+              </h4>
             </div>
 
             <div class="mycss rounded-6">
-              <h4 id="myhtml" class="px-4 rounded-6 py-1">HTML</h4>
+              <h4 id="myhtml" class="px-4 rounded-6 py-1">
+                <p class="skills my-auto">HTML</p>
+              </h4>
             </div>
 
             <div class="myjs rounded-6">
-              <h4 id="myjs" class="px-4 rounded-6 py-1">javascript</h4>
+              <h4 id="myjs" class="px-4 rounded-6 py-1">
+                <p class="skills my-auto">javascript</p>
+              </h4>
             </div>
 
             <div class="mybootstrap rounded-6">
-              <h4 id="mybootstrap" class="px-4 rounded-6 py-1">bootstrap</h4>
+              <h4 id="mybootstrap" class="px-4 rounded-6 py-1">
+                <p class="skills my-auto">bootstrap</p>
+              </h4>
             </div>
 
             <div class="myphp rounded-6">
-              <h4 id="myphp" class="px-4 rounded-6 py-1">PHP</h4>
+              <h4 id="myphp" class="px-4 rounded-6 py-1">
+                <p class="skills my-auto">PHP</p>
+              </h4>
             </div>
 
             <div class="mylaravel rounded-6">
-              <h4 id="mylaravel" class="px-4 rounded-6 py-1">laravel</h4>
+              <h4 id="mylaravel" class="px-4 rounded-6 py-1">
+                <p class="skills my-auto">laravel</p>
+              </h4>
             </div>
           </div>
         </div>
@@ -295,22 +253,22 @@
     </section>
 
     <section id="project" class="container projects-container py-5 my-5">
-      <h2 class="d-block mx-auto my-5">projects</h2>
+      <h2 class="d-block mx-auto my-5 display-1 opacity-80">Projects</h2>
 
-      <div class="row">
-        <div class="col-md-4 px-4">
-          <img class="mt-5 project-1 rounded-6" src="/img/project-1.png" alt="" />
-          <h3 class="fw-bold ls-widest d-block mx-auto my-3">World cup 2022</h3>
+      <div class="myprojects row my-5 ">
+        <div class="col ">
+          <img class="mt-5 project-1 rounded-6 d-block mx-auto" src="/img/project-1.png" alt="" />
+          <h3 class="fw-bold ls-widest d-block my-3">World cup 2022</h3>
         </div>
-        <div class="col-md-4 px-4">
-          <img class="mt-5 project-2 rounded-6" src="/img/project-2.png" alt="" />
-          <h3 class="fw-bold ls-widest d-block mx-auto my-3">
+        <div class="col  ">
+          <img class="mt-5 project-2 rounded-6 d-block mx-auto" src="/img/project-2.png" alt="" />
+          <h3 class="fw-bold ls-widest d-block  my-3">
             Flex & Grid excercise
           </h3>
         </div>
-        <div class="col-md-4 px-4">
-          <img class="mt-5 project-3 rounded-6" src="/img/project-3.png" alt="" />
-          <h3 class="fw-bold ls-widest d-block mx-auto my-3">
+        <div class="col ">
+          <img class="mt-5 project-3 rounded-6 d-block mx-auto" src="/img/project-3.png" alt="" />
+          <h3 class="fw-bold ls-widest d-block  my-3">
             1st bootstrap project
           </h3>
         </div>
@@ -319,18 +277,18 @@
 
     <!-- Contact section  -->
     <section id="contact" class="contact py-5">
-      <h2 class="text-white fw-bold">Contact me</h2>
+      <h2 class="text-white  display-6  ">Contact me</h2>
 
       <div class="row py-5">
-        <div class="col-md-6 px-4 py-5">
+        <div class="col-md-6  py-5 d-grid justify-content-center">
           <div class="phone d-flex my-4">
             <img class="" src="/img/phone.png" alt="" />
             <p class="ls-widest fw-light text-white my-auto">
-              <a class="text-white" href="tel:+962787823264">+962787823264</a>
+              <a class="text-white" href="tel:+962787823264"> +962787823264</a>
             </p>
           </div>
 
-          <div class="email d-flex my-4">
+          <div class="email d-flex my-4 ">
             <img class="" src="/img/email.png" alt="" />
             <p class="ls-widest fw-light text-white my-auto">
               <a class="text-white" href="mailto:ahmad98alsalman@gmail.com">ahmad98alsalman@gmail.com
@@ -338,17 +296,20 @@
             </p>
           </div>
         </div>
-        <div class="social col-md-6 my-auto">
+        <div class="social d-flex col-md-6 justify-content-center my-auto">
           <div class="facebook">
             <a href="https://web.facebook.com/ahmad.Od98" target="_blank"><img src="/img/facebook.png" alt="" /></a>
           </div>
+
           <div class="instagram">
             <a href="https://www.instagram.com/ahmad.odeh98/" target="_blank"><img src="/img/instagram.png"
                 alt="" /></a>
           </div>
+
           <div class="github">
             <a href="https://github.com/ahmad-salman98" target="_blank"><img src="/img/github.png" alt="" /></a>
           </div>
+
           <div class="linkedIn">
             <a href="https://www.linkedin.com/in/ahmad-od/" target="_blank"><img src="/img/linkedin.png" alt="" /></a>
           </div>
