@@ -7,17 +7,20 @@
     <title>Ahmad Salman's Portfolio</title>
     <!-- Font Awesome -->
 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
+    <script src="https://kit.fontawesome.com/0a9ca5a95a.js" crossorigin="anonymous"></script>
+
     <!-- Google Fonts Roboto -->
     <link rel="stylesheet"
       href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" />
 
+
     <!-- MDB -->
 
     <link rel="stylesheet" href="css/mdb.min.css" />
-    <link rel="stylesheet" href="./style.css" />
     <link rel="stylesheet" href="./js/vanilla-tilt.js" />
 
+    <!-- my css  -->
+    <link rel="stylesheet" href="./style.css" />
     <!-- CDN  -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
       integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
@@ -52,7 +55,7 @@
               </a>
 
 
-              <a class="btn btn-outline-light btn-lg h-auto opacity-80" href="#contact" role="button">
+              <a id="contactmebtn" class="btn btn-outline-light btn-lg h-auto opacity-80" href="#contact" role="button">
                 <p class="my-auto opacity-90 ">Contact me</p>
               </a>
             </div>
@@ -91,7 +94,7 @@
 
     <!-- nav bar -->
 
-    <nav class=" navbar navbar-expand-md navbar-dark sticky-top  ">
+    <nav id="navbar-nav" class=" navbar navbar-expand-md navbar-dark sticky-top  ">
       <div class="container-fluid">
         <!-- toggler -->
         <button type="button" class="navbar-toggler" data-bs-target="#navbarNav" data-bs-toggle="collapse"
@@ -100,23 +103,21 @@
         </button>
 
         <!-- Navbar brand -->
-        <a class="navbar-brand nav-link ms-5" href="#">
+        <a class="navbar-brand  ms-5" href="#">
           <img id="navlogo" src="/img/logo .png" alt="" />
         </a>
 
         <!-- navbar buttons  -->
         <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav mx-auto mb-2 mb-lg-0 nav-tabs nav-justified ">
-            <li class="nav-item active">
-              <a class="nav-link" aria-current="page" href="#intro">Home</a>
+          <ul class="navbar-nav mx-auto mb-2 mb-lg-0 nav-tabs nav-justified">
+            <li class="nav-item ">
+              <a class="nav-link " href="#intro">Home</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#about" rel="" "
-                >About</a
-              >
+              <a class="nav-link" href="#about" rel="">About</a>
             </li>
             <li class=" nav-item">
-                <a class="nav-link" href="#project">Projects</a>
+              <a class="nav-link" href="#project">Projects</a>
             </li>
 
             <li class=" nav-item">
@@ -124,17 +125,16 @@
             </li>
           </ul>
 
-          <ul class="navbar-nav list-inline me-5 ">
+          <ul class="navbar-nav list-inline nav-tabs  me-5 ">
             <!-- Icons -->
             <li class="">
               <a class="nav-link" href="https://web.facebook.com/ahmad.Od98" rel="nofollow" target="_blank">
-                <i class="fab fa-facebook-f"></i>
+                <i class="fab fa-facebook-f "></i>
               </a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#" rel="nofollow" target="_blank">
-                <i class="fab fa-twitter"></i>
-              </a>
+              <a class="nav-link" href="https://www.linkedin.com/in/ahmad-od/" rel="nofollow" target="_blank">
+                <i class="fa-brands fa-linkedin-in"></i> </a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="https://github.com/ahmad-salman98" rel="nofollow" target="_blank">
@@ -202,7 +202,7 @@
             </div>
             <p id="myimg-label" class="ls-widest fw-bold my-4 mx-auto d-block" for="myimg">Who's this guy?</p>
 
-            <p class="opacity-80 ls-widest">
+            <p class="opacity-80 ls-widest py-0">
               A strong passion for web pages design and Performance has been
               taking me throughout interesting and enjoyable routes of working,
               searching, and volunteering. I'm not rushing for an ambitious
@@ -211,7 +211,7 @@
             </p>
           </div>
 
-          <div class="col myexp d-grid my-auto  ">
+          <div class="col myexp d-grid py-4 ">
             <div class="mycss rounded-6  ">
               <h4 id="mycss" class="px-4 rounded-6 py-1">
                 <p class="skills my-auto">CSS</p>
@@ -277,18 +277,18 @@
 
     <!-- Contact section  -->
     <section id="contact" class="contact py-5">
-      <h2 class="text-white  display-6  ">Contact me</h2>
+      <h2 class="text-white  display-5 p-0  ">Contact me</h2>
 
       <div class="row py-5">
         <div class="col-md-6  py-5 d-grid justify-content-center">
-          <div class="phone d-flex my-4">
+          <div class="phone d-flex mb-4">
             <img class="" src="/img/phone.png" alt="" />
             <p class="ls-widest fw-light text-white my-auto">
               <a class="text-white" href="tel:+962787823264"> +962787823264</a>
             </p>
           </div>
 
-          <div class="email d-flex my-4 ">
+          <div class="email d-flex mt-4 ">
             <img class="" src="/img/email.png" alt="" />
             <p class="ls-widest fw-light text-white my-auto">
               <a class="text-white" href="mailto:ahmad98alsalman@gmail.com">ahmad98alsalman@gmail.com

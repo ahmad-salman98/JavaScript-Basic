@@ -1,6 +1,7 @@
 body {
   overflow-y: scroll;
   overflow-x: hidden;
+  position: relative;
 }
 .landing {
   background-color: hsl(218, 41%, 15%);
@@ -20,7 +21,6 @@ body {
       hsl(218, 41%, 19%) 80%,
       transparent 100%
     );
-  overflow: hidden;
 }
 
 .title-1 {
@@ -119,7 +119,7 @@ body {
   }
 }
 :root {
-  --nav-color: hsl(218, 41%, 20%);
+  --nav-color: #1e2d48;
   --color-nav: #719fef;
 }
 .navbar {
@@ -128,11 +128,18 @@ body {
 .navbar .navbar-nav .nav-link {
   font-size: larger;
   color: white;
+  opacity: 0.9;
 }
-.navbar .navbar-nav .nav-link.avtive,
-.navbar .navbar-nav .nav-link:hover,
+.navbar .navbar-nav .nav-link:active {
+  color: #04c2c9;
+  background-color: #04c2c9;
+}
+.navbar .navbar-nav .nav-link:hover {
+  color: #1e2d48;
+  background-color: rgba(255, 255, 255, 0.954);
+}
 .navbar .navbar-nav .nav-link:focus {
-  color: var(--color-nav);
+  color: #04c2c9;
 }
 
 .container h2,
@@ -154,8 +161,8 @@ p {
 }
 .myimg-col p {
   text-align: justify;
-  text-shadow: 1px 1px #0da2a787;
   border: #0da1a7 1px;
+  font-weight: 600;
 }
 #myimg-label {
   font-size: x-large;
@@ -213,13 +220,17 @@ p.skills {
 .contact img,
 #navlogo {
   filter: brightness(0) invert(1);
-  width: 40px;
+  width: 30px;
   margin-right: 2rem;
   padding: 0;
 }
+#contactmebtn:hover {
+  color: white;
+  background-color: rgba(255, 255, 255, 0.042);
+}
 .phone p,
 .email p {
-  font-size: large;
+  font-size: larger;
 }
 .contact {
   background-color: #252934;
@@ -234,14 +245,10 @@ p.skills {
   text-decoration: none;
 }
 
-.social {
-  padding: 0;
-}
-
 .social img {
-  border: white solid 3px;
-  width: 50px;
-  border-radius: 5px;
+  border: white solid 2px;
+  width: 35px;
+  border-radius: 10px;
   padding: 6px;
 }
 .contact h2 {
