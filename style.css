@@ -21,6 +21,7 @@ body {
       hsl(218, 41%, 19%) 80%,
       transparent 100%
     );
+  overflow: hidden;
 }
 
 .title-1 {
@@ -118,25 +119,20 @@ body {
     opacity: 1;
   }
 }
-:root {
-  --nav-color: #1e2d48;
-  --color-nav: #719fef;
-}
 .navbar {
-  background-color: var(--nav-color);
+  background-color: #071e30;
 }
 .navbar .navbar-nav .nav-link {
   font-size: larger;
   color: white;
   opacity: 0.9;
 }
+
 .navbar .navbar-nav .nav-link:active {
   color: #04c2c9;
-  background-color: #04c2c9;
 }
 .navbar .navbar-nav .nav-link:hover {
   color: #1e2d48;
-  background-color: rgba(255, 255, 255, 0.954);
 }
 .navbar .navbar-nav .nav-link:focus {
   color: #04c2c9;
@@ -163,6 +159,7 @@ p {
   text-align: justify;
   border: #0da1a7 1px;
   font-weight: 600;
+  font-size: large;
 }
 #myimg-label {
   font-size: x-large;
@@ -217,13 +214,12 @@ p.skills {
   border: #44006b 1px solid;
 }
 
-.contact img,
-#navlogo {
+.contact img {
   filter: brightness(0) invert(1);
   width: 30px;
-  margin-right: 2rem;
   padding: 0;
 }
+
 #contactmebtn:hover {
   color: white;
   background-color: rgba(255, 255, 255, 0.042);
@@ -232,46 +228,29 @@ p.skills {
 .email p {
   font-size: larger;
 }
-.contact {
-  background-color: #252934;
-  height: fit-content;
-}
-.phone,
-.email {
-  justify-content: start;
-}
-.phone a,
-.email a {
-  text-decoration: none;
-}
-
-.social img {
+.contact img {
   border: white solid 2px;
   width: 35px;
   border-radius: 10px;
   padding: 6px;
 }
-.contact h2 {
-  text-align: center;
-}
-footer span {
-  color: red;
-}
+
 footer {
-  border-top: red solid 1px;
-  display: flex;
-  height: 100px;
-  background-color: black;
-  align-items: center;
-  justify-content: center;
+  height: fit-content;
+  background-color: #071e30;
 }
-footer p {
+footer p,
+footer a {
   font-size: x-large;
 }
+
 #navlogo {
-  width: 150px;
+  height: 70px;
   margin: 0;
   padding: 0;
+}
+#copy-2022 {
+  color: #81ffd9;
 }
 
 /* editing */
