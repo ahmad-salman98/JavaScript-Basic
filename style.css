@@ -275,3 +275,38 @@ footer p {
 }
 
 /* editing */
+
+.landing .bubbles {
+  position: relative;
+  display: flex;
+  padding: 0;
+  margin: 0;
+  height: 0;
+  width: 10000px;
+}
+.bubbles span {
+  display: inline-block;
+  height: 100%;
+  width: fit-content;
+  position: relative;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background: #04c2c9;
+  margin: 0 4px;
+  box-shadow: 0 0 0 10px #04c2c944, 0 0 50px #04c2c9, 0 0 100px #04c2c9;
+  animation: animate 15s linear infinite;
+  animation-duration: calc(150s / var(--i));
+}
+.bubbles span:nth-child(even) {
+  background: #ad1fff;
+  box-shadow: 0 0 0 10px #ad1fff44, 0 0 50px #ad1fff, 0 0 100px #ad1fff;
+}
+@keyframes animate {
+  0% {
+    transform: translateY(100vh) scale(0);
+  }
+  100% {
+    transform: translateY(-30vh) scale(1);
+  }
+}
