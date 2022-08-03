@@ -129,11 +129,14 @@ body {
 }
 
 .navbar .navbar-nav .nav-link:active {
-  color: #04c2c9;
+  color: #65cab1;
 }
 .navbar .navbar-nav .nav-link:hover {
-  color: #1e2d48;
+  color: #65cab1;
+  background-color: #071e30 !important;
+  border-color: #071e30 !important;
 }
+
 .navbar .navbar-nav .nav-link:focus {
   color: #04c2c9;
 }
@@ -218,6 +221,10 @@ p.skills {
   filter: brightness(0) invert(1);
   width: 30px;
   padding: 0;
+  border: white solid 2px;
+  width: 35px;
+  border-radius: 10px;
+  padding: 6px;
 }
 
 #contactmebtn:hover {
@@ -228,13 +235,6 @@ p.skills {
 .email p {
   font-size: larger;
 }
-.contact img {
-  border: white solid 2px;
-  width: 35px;
-  border-radius: 10px;
-  padding: 6px;
-}
-
 footer {
   height: fit-content;
   background-color: #071e30;
